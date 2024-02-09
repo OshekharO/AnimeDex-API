@@ -1,14 +1,15 @@
 {
     "name": "anime-dex-api",
-    "version": "0.0.0",
+    "version": "0.0.1",
+    "main": "index.js",
     "devDependencies": {
-        "wrangler": "^3.25.0"
+        "wrangler": "^3.25.0",
+        "nodemon": "^2.0.15"
     },
-    "private": true,
-    "scripts": {
-        "start": "wrangler dev",
-        "deploy": "wrangler deploy"
-    },
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
     "dependencies": {
         "cheerio": "^1.0.0-rc.12",
         "crypto-js": "^4.2.0",
